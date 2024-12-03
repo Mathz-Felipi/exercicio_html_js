@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio HTML-JAVASCRIPT</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Comparador de Numeros</h1>
+        <p><b>Preencha os valores a serem comparados nos campos abaixo.</b></p>
+        <p>Observação: o maior numero deve ficar no campo <b>B</b>, e o menor no campo <b>A</b>!</p>
+        <form id="formulario">
+            <input id="campoA" type="number" required placeholder="Digite o menor numero: (Campo A)">
+            <p class="resultadoErro"></p>
+            <input id="campoB" type="number" required placeholder="Digite o maior numero: (Campo B)">
+            <button id="btnComparar" type="submit">Comparar Numeros</button>
+        </form>
+        <p class="resultadoCerto"></p>
+        
+        <button id="reset">Recomeçar o processo</button>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
