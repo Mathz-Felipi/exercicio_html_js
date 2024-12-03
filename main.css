@@ -56,20 +56,34 @@ button#reset {
 button#reset:hover{
     background-color: red;
 }
-/*.resultadoErro {
+.resultadoErro {
     font-size: 12px;
     padding: 12px;
     color: #fff;
     background-color: red;
     margin-bottom: 8px;
     display: none;
-}*/
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.resultadoErro.show {
+    display: block;
+    opacity: 1;
+}
 
 .resultadoCerto {
     background-color: #0fff5f;
     padding: 16px;
     color: #fff;
     display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.resultadoCerto.show {
+    display: block;
+    opacity: 1;
 }
 
 input.error {
